@@ -1,0 +1,23 @@
+
+ var removeDuplicates = function(nums) {
+     for(var i=0;i<nums.length;)
+        {
+            for(var j=i+1;i<nums.length;j++)
+            {
+                 if(nums[i]!=nums[j])
+                    {
+                         nums[index]=nums[i];
+                        index++;
+                        i=j;
+                         break;
+                     }
+             }
+         }
+        nums.length=index;
+             console.log ("length is",nums.length)
+                        console.log ("index is",index)
+	 
+                         console.log ("nums is",nums.slice(0,index))
+
+         };
+ removeDuplicates([1,1,2,2,3,3,3,4])
